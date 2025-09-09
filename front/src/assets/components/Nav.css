@@ -1,0 +1,13 @@
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+a{
+  text-decoration: none;
+  color: var(--neutro-400);
+  font-size: var(--body-16-medium-size);
+  font-weight: var(--body-16-medium-weight);
+}
