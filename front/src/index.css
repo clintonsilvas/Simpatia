@@ -81,6 +81,8 @@
   --body-14-medium-weight: 500;
   --body-14-medium-line: 1.6;
 
+  --gradiente-roxo-escuro:  linear-gradient(180deg, #4B04CD 0%, #4001B2 100%);
+  --gradiente-roxo-medio:  linear-gradient(180deg, #8666C6 0%, #6B44B8 100%);
 
 }
 .container {
@@ -93,4 +95,7 @@
   flex-direction: column;
 }
 
+*{
+  font-family: var(--font-family);
+}
 
