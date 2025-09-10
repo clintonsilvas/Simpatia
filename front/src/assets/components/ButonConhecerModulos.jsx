@@ -4,7 +4,6 @@ function ButonConhecerModulos() {
       Quero conhecer os módulos!
       <img src="/icons/flexa.svg" alt="Seta para direita" />
     </button>
-    
   );
 
 }

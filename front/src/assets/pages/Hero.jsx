@@ -9,7 +9,6 @@ function Hero() {
         <h1>Uma nova forma de aprender com o poder da IA</h1>
         <spam> Ferramentas criadas para apoiar alunos e professores na sala de aula.</spam>
         <ButonConhecerModulos />
-
       </div>
 
       <div className="hero-subtitle">
