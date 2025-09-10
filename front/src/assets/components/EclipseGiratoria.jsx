@@ -9,7 +9,7 @@ function EclipseGiratória() {
       
       <svg className="texto-circular-svg" viewBox="0 0 200 200">
         
-        <path id="caminhoCircular" d="M 100, 100 m -75, 0 a 75,75 0 1,1 150,0 a 75,75 0 1,1 -150,0"              fill="none" />
+        <path id="caminhoCircular" d="M 100, 100 m -75, 0 a 75,75 0 1,1 150,0 a 75,75 0 1,1 -150,0" fill="none" />
               
         <text className="texto-svg">          
           <textPath href="#caminhoCircular" startOffset="50%" text-anchor="middle">

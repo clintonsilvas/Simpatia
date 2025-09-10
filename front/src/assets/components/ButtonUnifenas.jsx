@@ -1,9 +1,9 @@
-
+import './ButtonUnifenas.css'
 function ButonUnifenas() {
   return (
-    <button>
-      <img src="/unifenas-logo.svg" alt="Logo Unifenas" />
-      Conheça a Unifenas 
+    <button className='button-unifenas'>
+      <img src="/icons/logounifenas.svg" alt="Logo Unifenas" />
+      Conheça a Unifenas
     </button>
     
   );
