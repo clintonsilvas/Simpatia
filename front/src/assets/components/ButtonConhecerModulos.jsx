@@ -1,4 +1,4 @@
-function ButonConhecerModulos() {
+function ButtonConhecerModulos() {
   return (
     <button>
       Quero conhecer os módulos!
@@ -9,4 +9,4 @@ function ButonConhecerModulos() {
 
 }
 
-export default ButonConhecerModulos
+export default ButtonConhecerModulos

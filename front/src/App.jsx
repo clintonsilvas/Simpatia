@@ -1,4 +1,4 @@
-import Hero from './assets/pages/hero.jsx'
+import Hero from './assets/pages/Hero.jsx'
 function App() {
 
   return (

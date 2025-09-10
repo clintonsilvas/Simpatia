@@ -1,6 +1,6 @@
 import './EclipseGiratoria.css';
 
-function EclipseGiratória() { 
+function EclipseGiratoria() { 
   const texto = "SISTEMA • DE • MÍDIAS • PEDAGÓGICAS • PARA • ATIVIDADES • COM • INTELIGÊNCIA • ARTIFICIAL •";
 
   return (
@@ -25,4 +25,4 @@ function EclipseGiratória() {
   );
 }
 
-export default EclipseGiratória;
+export default EclipseGiratoria
