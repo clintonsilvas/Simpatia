@@ -1,0 +1,57 @@
+.eclipse {
+  width: 179px;
+  height: 179px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;  
+  border-radius: 50%; /* Para garantir que o container também seja circular */
+  overflow: hidden; /* Garante que nada saia do círculo principal */
+}
+
+.container-baixo {
+  background-color: var(--azul-01);
+  border-radius: 100%;
+  position: absolute;
+  width: 179px; /* Igual ao .eclipse */
+  height: 179px; /* Igual ao .eclipse */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-container {
+  background-color: var(--azul-claro-03);
+  border-radius: 100%;
+  width: 115px;
+  height: 115px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; 
+  z-index: 2;
+}
+
+.texto-circular-svg {
+  position: absolute;  
+
+  z-index: 1;
+  
+  
+  animation: girarSvg 15s linear infinite; /* Ajuste a duração conforme desejar */
+  transform-origin: center; /* Gira em torno do centro */
+}
+
+.texto-circular-svg textPath {  
+  fill: white;  
+  font-size: 10px;
+}
+
+@keyframes girarSvg {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
