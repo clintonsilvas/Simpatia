@@ -1,3 +1,4 @@
+import ButonUnifenas from './ButtonUnifenas'
 import './Nav.css'
 import ButtonConhecerUnifenas from "../components/ButtonConhecerUnifenas";
 
@@ -11,7 +12,7 @@ function NavBar() {
       </a>
       <a href="/">Modulos de Ia</a>
       <a href="/about">Sobre o Projeto</a>
-      <ButtonConhecerUnifenas></ButtonConhecerUnifenas>
+      <ButonUnifenas />
       
     </nav>    
   )
