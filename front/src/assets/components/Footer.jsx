@@ -13,10 +13,10 @@ function Footer() {
           <img src="/logo-simpatia.svg" alt="Logo Simpatia" className="footer-logo-simpatia" />
           <div className="footer-text-box">
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio expedita optio impedit suscipit quos illo sint ea sed? Recusandae itaque voluptate ex doloremque autem harum necessitatibus nesciunt aliquam, maiores pariatur!
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio expedita optio impedit suscipit quos illo sint ea sed?
             </p>
           </div>
-          <ButtonConhecerModulos/>
+            <ButtonConhecerModulos/>
         </div>
 
         {/* Divisão Meio/Direita */}
@@ -27,15 +27,15 @@ function Footer() {
             <div className="footer-column">
               <h3>Para Professores</h3>
               <ul>
-                <li><a href="#sobre">Gerador de Plano de Aulas</a></li>
-                <li><a href="#cursos">Corretor de Questões Descritivas</a></li>
+                <li><a href="/">Gerador de Plano de Aulas</a></li>
+                <li><a href="/">Corretor de Questões Descritivas</a></li>
               </ul>
             </div>
             {/* Coluna 2 (links) */}
             <div className="footer-column">
               <h3>Para Alunos</h3>
               <ul>
-                <li><a href="#blog">Simpático</a></li>
+                <li><a href="/">Simpático</a></li>
               </ul>
             </div>
           </div>
