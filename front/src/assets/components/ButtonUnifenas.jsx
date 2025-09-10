@@ -1,13 +1,13 @@
+import React from 'react';
+import './ButtonUnifenas.css';
 
-function ButonUnifenas() {
+function ButtonUnifenas() {
   return (
-    <button>
+    <button className="button-unifenas">
       <img src="/unifenas-logo.svg" alt="Logo Unifenas" />
-      Conheça a Unifenas 
+      Conheça a Unifenas
     </button>
-    
   );
-
 }
 
-export default ButonUnifenas
+export default ButtonUnifenas;

@@ -1,8 +1,9 @@
-import NavBar from "../components/Nav";
-import ButonConhecerModulos from "../components/ButonConhecerModulos";
+import NavBar from '../components/Nav';
+import ButtonConhecerModulos from '../components/ButtonConhecerModulos';
 import './Hero.css'
-import ButonUnifenas from "../components/ButtonUnifenas";
-import EclipeGiratória from "../components/EclipseGiratoria";
+import ButtonUnifenas from '../components/ButtonUnifenas';
+import EclipseGiratoria from '../components/EclipseGiratoria';
+
 function Hero() {
   return (
     <container>
@@ -10,10 +11,9 @@ function Hero() {
       <div>
         <h1>Uma nova forma de aprender com o poder da IA</h1>
         <spam> Ferramentas criadas para apoiar alunos e professores na sala de aula.</spam>
-        <ButonConhecerModulos />
-        <ButonUnifenas />
-        <EclipeGiratória(#555888) />
-
+        <ButtonConhecerModulos />
+        <ButtonUnifenas />
+        <EclipseGiratoria />
       </div>  
     </container>    
   );
