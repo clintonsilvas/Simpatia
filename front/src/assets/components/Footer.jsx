@@ -16,7 +16,7 @@ function Footer() {
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio expedita optio impedit suscipit quos illo sint ea sed?
             </p>
           </div>
-            <ButtonConhecerModulos/>
+            <ButtonConhecerModulos texto="Quero conhecer os módulos!" mostrarIcone={true} />
         </div>
 
         {/* Divisão Meio/Direita */}
@@ -44,9 +44,15 @@ function Footer() {
             <div className="footer-text-know-more">
               Conheça mais sobre o projeto
             </div>
-            <ButtonUnifenas></ButtonUnifenas>
+            <ButtonUnifenas/>
           </div>
         </div>
+      </div>
+
+      <div className="footer-final-division">
+        <span className="atex-info">ATEX - © 2025 SIMPATIA</span>
+        <span className="system-info">-</span>
+        <span className="system-info">Sistema de Mídias Pedagógicas para Atividades com Inteligência Artificial</span>
       </div>
     </footer>
   );
