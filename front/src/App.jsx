@@ -1,9 +1,9 @@
-import Hero from './assets/pages/hero.jsx'
+import Faq from './assets/pages/faq.jsx'
 function App() {
 
   return (
     <>
-      <Hero />
+      <Faq/>
     </>
   )
 }

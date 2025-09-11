@@ -12,8 +12,6 @@ function Hero() {
         <spam> Ferramentas criadas para apoiar alunos e professores na sala de aula.</spam>
         <ButonConhecerModulos />
         <ButonUnifenas />
-        <EclipeGiratória(#555888) />
-
       </div>  
     </container>    
   );
