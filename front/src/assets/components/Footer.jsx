@@ -13,7 +13,7 @@ function Footer() {
           <img src="/logo-simpatia.svg" alt="Logo Simpatia" className="footer-logo-simpatia" />
           <div className="footer-text-box">
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio expedita optio impedit suscipit quos illo sint ea sed?
+              Lorem ipsum dolor sit amet. Eos minus sunt qui nobis nemo nam provident delectus aut itaque molestiae ut odio soluta.
             </p>
           </div>
             <ButtonConhecerModulos texto="Quero conhecer os módulos!" mostrarIcone={true} />
@@ -41,14 +41,15 @@ function Footer() {
           </div>
           {/* Divisão de baixo */}
           <div className="footer-right-bottom">
-            <div className="footer-text-know-more">
+            <a href="/" className="footer-text-know-more">
               Conheça mais sobre o projeto
-            </div>
+            </a>
             <ButtonUnifenas/>
           </div>
         </div>
       </div>
 
+      <div className="footer-divider"></div>
       <div className="footer-final-division">
         <span className="atex-info">ATEX - © 2025 SIMPATIA</span>
         <span className="system-info">-</span>
