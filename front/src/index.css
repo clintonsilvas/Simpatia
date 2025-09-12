@@ -83,16 +83,8 @@
 
   --gradiente-roxo-escuro:  linear-gradient(180deg, #4B04CD 0%, #4001B2 100%);
   --gradiente-roxo-medio:  linear-gradient(180deg, #8666C6 0%, #6B44B8 100%);
+  --gradiente-azul-claro: linear-gradient(180deg, #F8F8FC 0%, #DBE6FC 100%);
 
-}
-.container {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr); /* 12 colunas flexíveis */
-  gap: 16px;
-  max-width: 1200px;
-  margin: 0 auto;
-  min-height: 80vh;
-  flex-direction: column;
 }
 
 *{

@@ -33,18 +33,15 @@
 }
 
 .texto-circular-svg {
-  position: absolute;  
-
-  z-index: 1;
-  
-  
-  animation: girarSvg 15s linear infinite; /* Ajuste a duração conforme desejar */
-  transform-origin: center; /* Gira em torno do centro */
+  position: absolute;
+  z-index: 1; 
+  animation: girarSvg 15s linear infinite; 
+  transform-origin: center;
 }
 
 .texto-circular-svg textPath {  
   fill: white;  
-  font-size: 10px;
+  font-size: 9px;
 }
 
 @keyframes girarSvg {
