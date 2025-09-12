@@ -52,6 +52,7 @@
   background: transparent;
   margin-bottom: 16px;
   align-self: stretch;
+  max-width: 384px;
 }
 
 /* --- Coluna Meio/Direita --- */
@@ -68,6 +69,7 @@
   justify-content: flex-start;
   width: 100%;
   gap: 120px;
+  align-items: flex-start;
 }
 
 .footer-column {
@@ -114,7 +116,7 @@
   align-items: center;
   justify-content: flex-start;
   width: 100%;
-  gap: 156px;
+  gap: 120px;
 }
 
 .footer-text-know-more {
@@ -127,6 +129,8 @@
   text-decoration: none;
   transition: color 0.3s ease;
   white-space: nowrap;
+  width: 260px; 
+  height: 22px;
 }
 
 .footer-text-know-more:hover {
@@ -149,7 +153,8 @@
   padding: 40px 32px;
   background-color: transparent;
   box-sizing: border-box;
-  gap: 8px;
+  gap: 8px; 
+  align-items: center;
 }
 
 .footer-final-division span {
@@ -177,8 +182,8 @@
   
   .footer-content {
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+    align-items: flex-start;
+    text-align: left;
     gap: 40px;
   }
 
@@ -186,31 +191,32 @@
   .footer-right {
     width: 100%;
     max-width: 500px;
-    align-items: center;
+    align-items: flex-start;
   }
 
   .footer-text-box {
     width: 100%;
-    text-align: center;
+    text-align: left;
   }
 
   .footer-right-top {
     flex-direction: column;
     gap: 40px;
-    align-items: center;
-    text-align: center;
+    align-items: flex-start;
+    text-align: left;
   }
 
   .footer-column {
-    align-items: center;
-    text-align: center;
+    align-items: flex-start;
+    text-align: left;
   }
   
   .footer-right-bottom {
     flex-direction: column;
     gap: 24px;
-    margin-top: 40px;
+    margin-top: 8px;
     justify-content: flex-start;
+    align-items: flex-start; 
   }
 
   .footer-right-bottom .button-unifenas {
@@ -224,12 +230,14 @@
 
   .footer-final-division {
     flex-direction: column;
-    text-align: center;
+    text-align: left;
     padding: 30px 20px;
     gap: 4px;
+    align-items: flex-start;
   }
 
   .footer-final-division span {
     font-size: var(--body-14-medium-size);
+    text-align: left;
   }
 }
