@@ -51,6 +51,7 @@
   letter-spacing: 0%;
   background: transparent;
   margin-bottom: 16px;
+  align-self: stretch;
 }
 
 /* --- Coluna Meio/Direita --- */
@@ -125,11 +126,11 @@
   letter-spacing: 0%;
   text-decoration: none;
   transition: color 0.3s ease;
+  white-space: nowrap;
 }
 
 .footer-text-know-more:hover {
   color: var(--roxo-principal); 
-  /* text-decoration: underline; */
   cursor: pointer;
 }
 
@@ -214,7 +215,6 @@
 
   .footer-right-bottom .button-unifenas {
     width: 100%;
-    max-width: 346px;
   }
 
   .footer-divider {

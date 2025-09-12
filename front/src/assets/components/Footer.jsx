@@ -13,7 +13,7 @@ function Footer() {
           <img src="/logo-simpatia.svg" alt="Logo Simpatia" className="footer-logo-simpatia" />
           <div className="footer-text-box">
             <p>
-              Lorem ipsum dolor sit amet. Eos minus sunt qui nobis nemo nam provident delectus aut itaque molestiae ut odio soluta.
+              O SIMPATIA foi desenvolvido por alunos da Unifenas com o objetivo de auxiliar alunos e professores com ferramentas de Inteligência Artificial.
             </p>
           </div>
             <ButtonConhecerModulos texto="Quero conhecer os módulos!" mostrarIcone={true} />
