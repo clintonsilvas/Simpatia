@@ -1,15 +1,11 @@
 import Hero from './assets/pages/Hero.jsx'
-import React from 'react';
-import './index.css';
-import ButtonUnifenas from './assets/components/ButtonUnifenas.jsx';
-import Footer from './assets/components/Footer';
-
+import Faq from './assets/pages/Faq.jsx';
 function App() {
 
   return (
     <>
-      <Hero />
-      <Footer />
+      <Hero/>
+      <Faq/>
     </>
   )
 }

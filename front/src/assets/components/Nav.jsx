@@ -4,7 +4,7 @@ import './Nav.css'
 function NavBar() {
   
   return (    
-    <nav>      
+    <nav>     
       
       <a href="/">
         <img src="/logo-simpatia.svg" alt="Logo" className="logo" />
