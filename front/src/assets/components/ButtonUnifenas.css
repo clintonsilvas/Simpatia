@@ -1,10 +1,10 @@
 .button-unifenas {
-  min-width: 346px;
+  min-width: 296px;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
-  height: 63px;
+  height: 64px;
   border: 1px solid var(--roxo-principal);
   border-radius: 8px;
 
