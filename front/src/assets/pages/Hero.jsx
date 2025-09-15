@@ -24,7 +24,7 @@ function Hero() {
   }, []);
 
   return (
-    <section className="container">
+    <section className="container">      
       <NavBar />
       <div className="content">
         <div className="hero-container">
