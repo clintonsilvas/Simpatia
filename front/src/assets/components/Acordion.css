@@ -8,7 +8,11 @@
   border-radius: 8px;
   border: 1px solid var(--neutro-200);
   background: var(--neutro-100);
-  /* cursor: pointer; REMOVIDO */
+}
+
+/* Transição de cor de fundo quando aberto */
+.acordion-container.is-open {
+  border-color: var(--neutro-300);
 }
 
 /* Container do conteúdo: pergunta e resposta */
@@ -32,6 +36,19 @@
   margin: 0;
 }
 
+/* Wrapper da resposta para animação de altura e opacidade */
+.acordion-resposta-wrapper {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out, opacity 0.5s ease-out;
+  opacity: 0;
+}
+
+.acordion-resposta-wrapper.is-open {
+  max-height: 200px;
+  opacity: 1;
+}
+
 /* Estilos para o texto da resposta */
 .acordion-resposta {
   width: 855px;
@@ -42,16 +59,9 @@
   font-weight: 400;
   line-height: 150%;
   margin: 0;
-  animation: fadeIn 0.3s ease-in-out; 
+  padding-top: 10px;
 }
 
-/* Animação do texto */
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
-/* Estilos para o wrapper do ícone */
 .acordion-icone-wrapper {
   display: flex;
   justify-content: center;
@@ -59,17 +69,52 @@
   width: 113px;
   height: 90px;
   flex-shrink: 0;
-  cursor: pointer; 
+  cursor: pointer;
 }
 
-/* Estilos para os SVGs dentro do wrapper */
 .acordion-icone-wrapper svg {
-  width: 26px; 
-  height: 26px; 
-  transition: transform 300ms ease-out; 
+  width: 26px;
+  height: 26px;
+  /* A transição aqui é redundante, pois a animação será feita nos wrappers */
+  transition: transform 300ms ease-out;
 }
 
-/* Rotação do ícone quando o acordeão está aberto */
-.acordion-container.is-open .acordion-icone-wrapper svg {
-  transform: rotate(180deg);
+/* Container para a transição dos ícones. Ele agora usa grid */
+.icone-transicao-container {
+  width: 26px;
+  height: 26px;
+  display: grid;
+  place-items: center;
+}
+
+/* Wrappers individuais dos ícones para controlar a animação */
+.expandir-icon-wrapper,
+.recolher-icon-wrapper {
+  /* Ocupam a mesma célula na grade para se sobreporem */
+  grid-area: 1 / 1 / 2 / 2;
+  transition: transform 0.4s ease-out, opacity 0.4s ease-out;
+}
+
+/* Estado inicial do ícone de expansão */
+.expandir-icon-wrapper {
+  opacity: 1;
+  transform: rotate(0deg);
+}
+
+/* Estado final (escondido) do ícone de expansão */
+.expandir-icon-wrapper.hidden {
+  opacity: 0;
+  transform: rotate(-45deg);
+}
+
+/* Estado inicial (escondido) do ícone de recolhimento */
+.recolher-icon-wrapper {
+  opacity: 0;
+  transform: rotate(45deg);
+}
+
+/* Estado final (visível) do ícone de recolhimento */
+.recolher-icon-wrapper.visible {
+  opacity: 1;
+  transform: rotate(0deg);
 }
