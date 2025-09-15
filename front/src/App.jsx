@@ -1,4 +1,4 @@
-import Hero from './assets/pages/Hero.jsx'
+import Hero from './assets/pages/Hero.jsx';
 import Faq from './assets/pages/Faq.jsx';
 import Footer from './assets/components/Footer.jsx';
 function App() {
@@ -6,8 +6,8 @@ function App() {
   return (
     <>
       <Hero/>
-      
-      
+      <Faq/>
+      <Footer/>
     </>
   )
 }
