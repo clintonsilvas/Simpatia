@@ -13,8 +13,8 @@
   background-color: var(--azul-01);
   border-radius: 100%;
   position: absolute;
-  width: 179px; /* Igual ao .eclipse */
-  height: 179px; /* Igual ao .eclipse */
+  width: 179px; 
+  height: 179px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -51,4 +51,33 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+@media screen and (max-width: 768px) {
+  
+  .eclipse {
+    width: 94px;
+    height: 94px;
+  }
+
+  .container-baixo {
+    width: 94px; 
+    height: 94px;
+  }
+
+  .logo-container {
+    width: 65px;
+    height: 65px;
+  }
+
+  .texto-circular-svg textPath {  
+   
+    font-size: 10px;
+  }
+  .logo-container img{
+    width: 39px;
+    height: 39px;
+  }
+
+
 }

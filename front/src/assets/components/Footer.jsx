@@ -1,4 +1,3 @@
-// Footer.jsx
 import React from 'react';
 import './Footer.css';
 import ButtonUnifenas from './ButtonUnifenas';
@@ -13,7 +12,7 @@ function Footer() {
           <img src="/logo-simpatia.svg" alt="Logo Simpatia" className="footer-logo-simpatia" />
           <div className="footer-text-box">
             <p>
-              O SIMPATIA foi desenvolvido por alunos da Unifenas com o objetivo de auxiliar alunos e professores com ferramentas de Inteligência Artificial.
+              O SIMPATIA foi desenvolvido por alunos da Unifenas a fim de auxiliar discentes e docentes com ferramentas de Inteligência Artificial.
             </p>
           </div>
             <ButtonConhecerModulos texto="Quero conhecer os módulos!" mostrarIcone={true} />
