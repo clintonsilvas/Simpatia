@@ -1,7 +1,7 @@
 /* Container Principal */
 .footer-container {
   background: linear-gradient(180deg, var(--azul-claro-03) 0%, var(--neutro-100) 100%);
-  width: 100vw;
+  width: 99vw;
   position: relative;
   left: 50%;
   right: 50%;

@@ -2,6 +2,7 @@
   background: var(--gradiente-azul-claro);  
   justify-items: center;
   padding: 5vh 0vw 0vh 0vw;
+  display: grid;
 }
 
 .content{
