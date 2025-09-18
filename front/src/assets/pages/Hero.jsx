@@ -24,9 +24,9 @@ function Hero() {
   }, []);
 
   return (
-    <section className="container">      
+    <section className="fundo-hero">      
       <NavBar />
-      <div className="content">
+      <div className="secao-hero">
         <div className="hero-container">
           <h1>Uma nova forma de <span>{textos[currentIndex]}</span> com o poder da IA</h1>
           <p> Ferramentas criadas para apoiar alunos e professores na sala de aula.</p>

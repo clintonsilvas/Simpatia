@@ -1,0 +1,33 @@
+.card-modulo {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.card-modulo:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-modulo img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 15px;
+}
+
+.card-modulo h4 {
+  font-size: 1.25rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.card-modulo p {
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.4;
+}
