@@ -45,7 +45,7 @@
 @media screen and (max-width: 768px) {
   .container-pagina {   
     margin-top: 40px;
-    gap: 32px;
+    gap: 8px;
   }
 
   .conteudo-textual {
@@ -70,7 +70,7 @@
     color: var(--neutro-500);
   } 
   .lista-acordeoes {
-    padding: 24px;
+    padding: 24px 0 24px 0;
   }
   
 }
