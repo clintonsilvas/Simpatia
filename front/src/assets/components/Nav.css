@@ -19,8 +19,15 @@
 .nav-links {
   display: flex;
   gap: 2rem;
+  justify-content: space-between;
+}
+
+.links-centrais{
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
+  gap: 56px;
+  margin-right: 20vh;
 }
 .nav-links hr{
   display: none;
@@ -34,7 +41,7 @@ a {
 }
 
 a:hover {
-  color: var(--primaria-unifenas-dark, #004c3f);
+  color: var(--azul-principal);
 }
 
 .hamburger-menu {
@@ -52,17 +59,43 @@ a:hover {
   border-radius: 5px;
 }
 
+.nav-item-dropdown {
+    position: relative;
+}
+
+.submenu-links {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  background-color: var(--neutro-000); 
+  border-radius: 0px 0px 5px 5px;
+  margin-top: 10px;
+  min-width: 150px;
+  z-index: 100;
+  gap: 8px;
+}
+
+.submenu-links.open {
+  display: flex;
+}
+
+.submenu-links a {
+  color: var(--neutro-500);
+  padding: 8px 10px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.submenu-links a:hover {
+  background-color: var(--neutro-100)
+}
+
 
 @media (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;    
-    padding: 16px 16px 24px 16px;  
-     
-  }
-  
+    
   .navbar-header {
     width: 100%;
+    padding: 16px 16px 24px 16px; 
   }
 
   .nav-links {
@@ -75,13 +108,22 @@ a:hover {
     overflow: hidden;
     transition: max-height 0.3s ease-out;
     background-color: var(--neutro-000);
-    position: fixed; /* Mude para fixed para sobrepor o conteúdo */
+    position: fixed; 
     top: 80px;
      
   }
+  .links-centrais{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;       
+  }
   
+  .navbar.open-nav {
+    background-color: var(--neutro-000);
+  }
 
   .nav-links.open {    
+    margin: 0;
     max-height: 500px;
     padding-top: 40px;
     padding-bottom: 24px;
