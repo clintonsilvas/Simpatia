@@ -49,8 +49,10 @@
 }
 
 .imagem-unifenas {
-  position: relative;
-  
+  position: relative;  
+}
+.imagem-unifenas img{
+  width: 45vw;
 }
 .eclipse-sobreposto{
   position: absolute;

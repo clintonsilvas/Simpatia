@@ -1,7 +1,9 @@
 .fotos {
   position: relative; 
-  width: 608px;
-  height: 565px;
+  max-width: 608px;
+  width: 90vw; /* Ajusta a largura com base na largura da tela */
+  height: 565px; /* Manter height fixo ou usar uma unidade relativa, como vw ou % */
+  margin: 0 auto; /* Centraliza o componente */
 }
 
 .fundo {
@@ -18,11 +20,11 @@
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 490px;
-  height: 562px;
+  width: 80%; /* Ocupa 80% da largura do contêiner .fotos */
+  height: 100%;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center bottom;
   transition: opacity 1s ease-in-out; 
   opacity: 0;
 }
