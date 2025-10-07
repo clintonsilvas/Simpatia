@@ -1,23 +1,18 @@
-import React from 'react';
 import Acordion from "../components/Acordion"; 
 import './Faq.css'; 
 
 function ServicosPage() {
   return (
-    <div className="container-pagina">
-      <div className="conteudo-central">
-        <div className="tag-titulo">
-          <p className="tag-texto">PERGUNTAS FREQUENTES</p>
-        </div>
-        <h1 className="titulo-pagina">Possui alguma dúvida?</h1>
-        <p className="descricao-pagina">
-          Aqui estão algumas das perguntas mais comuns que recebemos sobre nossos serviços. Se você não encontrar a resposta que procura, não hesite em nos contatar.
-        </p>
-      </div>
+    <div className="container-pagina">      
+      <div className="conteudo-textual">
+        <h2>PERGUNTAS FREQUENTES</h2>
+        <h3>Possui alguma dúvida?</h3>
+        <p>Aqui estão algumas das perguntas mais comuns que recebemos sobre nossos serviços. Se você não encontrar a resposta que procura, não hesite em nos contatar.</p>
+      </div>  
 
       <div className="lista-acordeoes">
-        <Acordion pergunta="Qual o horário de atendimento?">
-          Nosso horário de atendimento é de segunda a sexta, das 9h às 18h.
+        <Acordion pergunta="O que é o SIMPATIA?">
+          É um sistema de mídias pedagógicas com ferramentas de Inteligência Artificial para apoiar professores e alunos em atividades educacionais.
         </Acordion>
         <Acordion pergunta="Quais serviços vocês oferecem?">
           Oferecemos uma variedade de serviços, incluindo desenvolvimento de websites, aplicativos móveis e consultoria em tecnologia.

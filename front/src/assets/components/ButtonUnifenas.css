@@ -1,5 +1,4 @@
 .button-unifenas {
-  min-width: 296px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -11,7 +10,6 @@
   padding: 16px 24px;
   background-color: transparent;
   color: var(--neutro-700);
-
   font-family: var(--font-family);
   font-weight: var(--heading-18-weight);
   font-size: var(--heading-18-size); 
@@ -36,4 +34,11 @@
 
 .button-unifenas:hover .logo-unifenas path {
   fill: var(--neutro-100);
+}
+
+@media screen and (max-width: 768px) {
+  .button-unifenas{
+    min-width: 320px;
+  }
+  
 }

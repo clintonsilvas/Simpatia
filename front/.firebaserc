@@ -1,0 +1,8 @@
+{
+  "projects": {
+    "default": "simpatia-unifenas",
+    "simpatia-unifenas": "simpatia-unifenas"
+  },
+  "targets": {},
+  "etags": {}
+}
