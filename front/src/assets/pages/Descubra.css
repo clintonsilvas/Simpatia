@@ -17,6 +17,7 @@
   border-radius: 4px;
   background: var(--azul-claro-03);
   color: var(--azul-principal);
+  font-size: var(--heading-18-size);
 }
 .conteudo-textual h3 {
   color: var(--Cores-Neutras-700);
@@ -151,21 +152,20 @@
 
   .botao-passar button {
     background: var(--roxo-claro-03);
-    border: none; 
+    border: none;
     width: 75px;
     height: 40px;
     align-items: center;
-  }  
+  }
 
-  .botao-passar svg{
+  .botao-passar svg {
     fill: var(--roxo-claro-01);
-  } 
+  }
 
   .botao-passar button:first-of-type {
     border-radius: 8px 0 0 8px;
   }
 
-  
   .botao-passar button:last-of-type {
     border-radius: 0 8px 8px 0;
   }
@@ -174,9 +174,7 @@
     background: var(--roxo-claro-02);
   }
 
-  .botao-passar button.ativo svg{
+  .botao-passar button.ativo svg {
     fill: var(--roxo-principal);
   }
-
-
 }

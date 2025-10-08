@@ -2,18 +2,19 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;  
-  max-width: 1232px;  
+  width: 100%;
+  max-width: 1232px;
 }
 
 .navbar-header {
   display: flex;
   justify-content: space-between;
-  align-items: center;  
+  align-items: center;
+  width: fit-content;
 }
 
 .logo {
-  height: 50px;
+  height: 36px;
 }
 
 .nav-links {
@@ -22,14 +23,14 @@
   justify-content: space-between;
 }
 
-.links-centrais{
+.links-centrais {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 56px;
-  margin-right: 20vh;
+  width: fit-content;
 }
-.nav-links hr{
+.nav-links hr {
   display: none;
 }
 a {
@@ -60,14 +61,20 @@ a:hover {
 }
 
 .nav-item-dropdown {
-    position: relative;
+  position: relative;
+}
+
+.nav-item-dropdown a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .submenu-links {
   display: none;
   flex-direction: column;
   position: absolute;
-  background-color: var(--neutro-000); 
+  background-color: var(--neutro-000);
   border-radius: 0px 0px 5px 5px;
   margin-top: 10px;
   min-width: 150px;
@@ -87,15 +94,13 @@ a:hover {
 }
 
 .submenu-links a:hover {
-  background-color: var(--neutro-100)
+  background-color: var(--neutro-100);
 }
 
-
 @media (max-width: 768px) {
-    
   .navbar-header {
     width: 100%;
-    padding: 16px 16px 24px 16px; 
+    padding: 16px 16px 24px 16px;
   }
 
   .nav-links {
@@ -103,41 +108,38 @@ a:hover {
     flex-direction: column;
     width: 100%;
     align-items: center;
-    gap: 2rem;
-    max-height: 0;
-    overflow: hidden;
+    gap: space-between;
+
     transition: max-height 0.3s ease-out;
     background-color: var(--neutro-000);
-    position: fixed; 
+    position: fixed;
     top: 70px;
-     
   }
-  .links-centrais{
+  .links-centrais {
     justify-content: center;
     display: flex;
-    flex-direction: column;       
+    flex-direction: column;
   }
-  
+
   .navbar.open-nav {
     background-color: var(--neutro-000);
   }
 
-  .nav-links.open {    
+  .nav-links.open {
     margin: 0;
     max-height: 500px;
     padding-top: 40px;
     padding-bottom: 24px;
   }
-  .nav-links.open hr{
+  .nav-links.open hr {
     gap: 1px;
-    width: 80%;   
-    border-radius: 10px ;
+    width: 80%;
+    border-radius: 10px;
     color: var(--azul-principal);
   }
 
   .hamburger-menu {
     display: flex;
-
   }
 
   .logo {

@@ -1,16 +1,14 @@
-import NavBar from '../components/Nav';
-import ButtonConhecerModulos from '../components/ButtonConhecerModulos';
-import './Hero.css'
-import ButtonUnifenas from '../components/ButtonUnifenas';
-import CarroselFotos from '../components/CarroselFotos';
-import React, { useState, useEffect } from 'react';
+import NavBar from "../components/Nav";
+import ButtonConhecerModulos from "../components/ButtonConhecerModulos";
+import "./Hero.css";
+import ButtonUnifenas from "../components/ButtonUnifenas";
+import CarroselFotos from "../components/CarroselFotos";
+import React, { useState, useEffect } from "react";
 
 function Hero() {
-
-  const textos = ['aprender', 'ensinar'];
+  const textos = ["aprender", "ensinar"];
   const [currentIndex, setCurrentIndex] = useState(1);
 
-  
   const handleNext = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % textos.length);
   };
@@ -24,21 +22,32 @@ function Hero() {
   }, []);
 
   return (
-    <section className="fundo-hero">      
+    <section className="fundo-hero">
       <NavBar />
       <div className="secao-hero">
         <div className="hero-container">
-          <h1>Uma nova forma de <span>{textos[currentIndex]}</span> com o poder da IA</h1>
-          <p> Ferramentas criadas para apoiar alunos e professores na sala de aula.</p>
-          <div className='botoes'>
-            <ButtonConhecerModulos texto="Quero conhecer os módulos!" mostrarIcone={true} />
-            <ButtonUnifenas />   
+          <h1>
+            Uma nova forma de{" "}
+            <span class="texto_azul">{textos[currentIndex]}</span> com o poder
+            da IA
+          </h1>
+          <p>
+            {" "}
+            Ferramentas criadas para apoiar alunos e professores <br></br>na
+            sala de aula.
+          </p>
+          <div className="botoes">
+            <ButtonConhecerModulos
+              texto="Quero conhecer os módulos!"
+              mostrarIcone={true}
+            />
+            <ButtonUnifenas />
           </div>
-        </div> 
+        </div>
         <CarroselFotos currentIndex={currentIndex} handleNext={handleNext} />
-      </div> 
-    </section>    
+      </div>
+    </section>
   );
 }
 
-export default Hero
+export default Hero;

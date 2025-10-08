@@ -1,43 +1,42 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
 
-:root { 
+:root {
   /* Fonte padrão */
-  --font-family: 'Inter';
+  --font-family: "Inter";
 
-  
   /* Primary colors */
-  --azul-principal: #006FFF;
+  --azul-principal: #006fff;
   --roxo-principal: #370199;
 
   /*Variações de azul*/
-  --azul-escuro-01:#001838;
-  --azul-escuro-02:#002861;
-  --azul-escuro-03:#003785;
-  --azul-01: #0051C2;
-  --azul-02: #226DD6;
-  --azul-claro-01: #4485DF;
-  --azul-claro-02: #88B3EE;
-  --azul-claro-03: #DBE9FC;
+  --azul-escuro-01: #001838;
+  --azul-escuro-02: #002861;
+  --azul-escuro-03: #003785;
+  --azul-01: #0051c2;
+  --azul-02: #226dd6;
+  --azul-claro-01: #4485df;
+  --azul-claro-02: #88b3ee;
+  --azul-claro-03: #dbe9fc;
 
   /*Variações de roxo*/
-  --roxo-escuro-01:#170048;
-  --roxo-escuro-02:#2C007F;
-  --roxo-escuro-03:#5122A9;
-  --roxo-01: #6B44B8;
-  --roxo-02: #8666C6;
-  --roxo-claro-01: #A088D4;
-  --roxo-claro-02: #BBAAE1;
-  --roxo-claro-03: #D6CCEE;
+  --roxo-escuro-01: #170048;
+  --roxo-escuro-02: #2c007f;
+  --roxo-escuro-03: #5122a9;
+  --roxo-01: #6b44b8;
+  --roxo-02: #8666c6;
+  --roxo-claro-01: #a088d4;
+  --roxo-claro-02: #bbaae1;
+  --roxo-claro-03: #d6ccee;
 
   /*Variações de cores neutras*/
-  --neutro-700 : #0c0c12;
-  --neutro-600 : #4c4b67;
-  --neutro-500 : #7A7A99;
-  --neutro-400 : #ADADCC;
-  --neutro-300 : #C3C3D9;
-  --neutro-200 : #E4E4F2;
-  --neutro-100 : #F8F8FC;
-  --neutro-000 : #FEFEFF;
+  --neutro-700: #0c0c12;
+  --neutro-600: #4c4b67;
+  --neutro-500: #7a7a99;
+  --neutro-400: #adadcc;
+  --neutro-300: #c3c3d9;
+  --neutro-200: #e4e4f2;
+  --neutro-100: #f8f8fc;
+  --neutro-000: #fefeff;
 
   /* Headings */
   --heading-64-size: 64px;
@@ -81,17 +80,16 @@
   --body-14-medium-weight: 500;
   --body-14-medium-line: 1.6;
 
-  --gradiente-roxo-escuro:  linear-gradient(180deg, #4B04CD 0%, #4001B2 100%);
-  --gradiente-roxo-medio:  linear-gradient(180deg, #8666C6 0%, #6B44B8 100%);
-  --gradiente-azul-claro: linear-gradient(180deg, #F8F8FC 0%, #DBE6FC 100%);
-
+  --gradiente-roxo-escuro: linear-gradient(180deg, #4b04cd 0%, #4001b2 100%);
+  --gradiente-roxo-medio: linear-gradient(180deg, #8666c6 0%, #6b44b8 100%);
+  --gradiente-azul-claro: linear-gradient(180deg, #f8f8fc 0%, #dbe6fc 100%);
 }
 
-*{
+* {
   font-family: var(--font-family);
   box-sizing: border-box;
 }
-body{  
+body {
   margin: 0;
   justify-content: center;
   align-items: center;
