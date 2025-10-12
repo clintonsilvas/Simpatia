@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import ButtonUnifenas from "../components/ButtonUnifenas";
 import "./Nav.css";
+import NavModulos from "./NavModulos";
 
 function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -49,6 +50,7 @@ function NavBar() {
                 />
               </svg>
             </a>
+            <NavModulos />
             <div className={`submenu-links ${isSubMenuOpen ? "open" : ""}`}>
               <a href="/modulo1">Módulo 1</a>
               <a href="/modulo2">Módulo 2</a>
