@@ -146,3 +146,41 @@ a:hover {
     height: 27px;
   }
 }
+.submenu-links {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  opacity: 0;
+  transform: translateY(10px); /* começa levemente abaixo */
+  pointer-events: none;
+  transition: all 0.4s ease;
+}
+
+.submenu-links.open {
+  opacity: 1;
+  transform: translateY(0); /* sobe para posição original */
+  pointer-events: auto;
+}
+
+/* Ícone de seta */
+.arrow-icon {
+  margin-left: 6px;
+  transition: transform 0.3s ease;
+}
+
+.arrow-icon.rotated {
+  transform: rotate(180deg);
+}
+
+/* Estilo do link principal do dropdown */
+.dropdown-trigger {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.dropdown-trigger:hover {
+  color: var(--azul-principal);
+}

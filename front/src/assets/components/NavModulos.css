@@ -14,6 +14,7 @@
   position: absolute;
   right: -100%;
   top: 160%;
+  z-index: 10;
 }
 
 .grupo-content {
@@ -75,7 +76,100 @@
   border-top: 1px dashed #88b3ee;
 }
 
-hr {
+/*Tipo*/
+.op-tipo {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 16px;
   width: 100%;
-  border: 1px solid var(--neutro-300);
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.selecionado {
+  background-color: var(--azul-claro-03);
+}
+.nao-selecionado {
+  background-color: transparent;
+}
+
+.selecionado svg {
+  fill: var(--azul-principal);
+}
+
+.selecionado .tipo {
+  display: flex;
+  flex-direction: row;
+  color: var(--neutro-600);
+  gap: 10px;
+  align-items: center;
+  height: fit-content;
+  width: fit-content;
+}
+
+.selecionado .tipo-sub {
+  color: var(--neutro-500);
+}
+
+.nao-selecionado .tipo-sub {
+  color: var(--neutro-400);
+}
+
+.nao-selecionado svg {
+  fill: var(--neutro-400);
+}
+
+.nao-selecionado .tipo {
+  display: flex;
+  flex-direction: row;
+  color: var(--neutro-400);
+  gap: 10px;
+  align-items: center;
+  height: fit-content;
+  width: fit-content;
+}
+
+/* Modulos*/
+
+.content-grid-modulos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 8px;
+  width: 100%;
+}
+
+.op-modulo {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 16px;
+  width: 100%;
+  border-radius: 4px;
+  background-color: transparent;
+
+  transition: all 0.1s ease;
+}
+
+.op-modulo:hover {
+  background-color: var(--roxo-claro-03);
+}
+
+.op-modulo svg {
+  fill: var(--roxo-principal);
+}
+
+.modulo {
+  display: flex;
+  flex-direction: row;
+  color: var(--neutro-600);
+  gap: 10px;
+  align-items: center;
+  height: fit-content;
+  width: fit-content;
+}
+
+.op-modulo .tipo-sub {
+  color: var(--neutro-500);
 }

@@ -95,3 +95,63 @@ body {
   align-items: center;
   min-height: 100vh;
 }
+
+.heading-64-medium {
+  font-size: var(--heading-64-size);
+  font-weight: var(--heading-64-weight);
+  line-height: var(--heading-64-line);
+}
+
+.heading-40-semi {
+  font-size: var(--heading-40-size);
+  font-weight: var(--heading-40-weight);
+  line-height: var(--heading-40-line);
+}
+
+.heading-32-semi {
+  font-size: var(--heading-32-size);
+  font-weight: var(--heading-32-weight);
+  line-height: var(--heading-32-line);
+}
+
+.heading-24-semi {
+  font-size: var(--heading-24-size);
+  font-weight: var(--heading-24-weight);
+  line-height: var(--heading-24-line);
+}
+
+.heading-18-semi {
+  font-size: var(--heading-18-size);
+  font-weight: var(--heading-18-weight);
+  line-height: var(--heading-18-line);
+}
+
+.body-18-medium {
+  font-size: var(--body-18-medium-size);
+  font-weight: var(--body-18-medium-weight);
+  line-height: var(--body-18-medium-line);
+}
+
+.body-16-semi {
+  font-size: var(--body-16-semi-size);
+  font-weight: var(--body-16-semi-weight);
+  line-height: var(--body-16-semi-line);
+}
+
+.body-16-medium {
+  font-size: var(--body-16-medium-size);
+  font-weight: var(--body-16-medium-weight);
+  line-height: var(--body-16-medium-line);
+}
+
+.body-14-semi {
+  font-size: var(--body-14-semi-size);
+  font-weight: var(--body-14-semi-weight);
+  line-height: var(--body-14-semi-line);
+}
+
+.body-14-medium {
+  font-size: var(--body-14-medium-size);
+  font-weight: var(--body-14-medium-weight);
+  line-height: var(--body-14-medium-line);
+}
