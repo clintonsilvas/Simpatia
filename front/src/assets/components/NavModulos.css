@@ -116,6 +116,24 @@
   color: var(--neutro-400);
 }
 
+.selecionado .link-cta {
+  color: var(--azul-principal);
+}
+
+.link-cta {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: var(--neutro-400);
+  padding: 0px;
+  gap: 10px;
+}
+
+.link-cta:hover {
+  background-color: transparent;
+  color: var(--neutro-400);
+}
+
 .nao-selecionado svg {
   fill: var(--neutro-400);
 }

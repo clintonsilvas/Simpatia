@@ -56,8 +56,9 @@ function Hero() {
             <ButtonUnifenas />
           </div>
         </div>
-
-        <CarroselFotos onFotoChange={handleFotoChange} />
+        <div class="hero-container-foto">
+          <CarroselFotos onFotoChange={handleFotoChange} />
+        </div>
       </div>
     </section>
   );
