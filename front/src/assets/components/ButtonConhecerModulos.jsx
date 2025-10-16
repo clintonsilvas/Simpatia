@@ -3,7 +3,7 @@ import "./ButtonConhecerModulos.css";
 function ButtonConhecerModulos({ texto, mostrarIcone = false }) {
   return (
     <a className="button-conhecer" href="/modulos">
-      <spam>{texto}</spam>
+      <span>{texto}</span>
       {mostrarIcone && (
         <svg
           width="47"
