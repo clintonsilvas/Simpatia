@@ -1,20 +1,28 @@
-import Hero from './assets/pages/Hero.jsx';
-import Faq from './assets/pages/Faq.jsx';
-import Footer from './assets/components/Footer.jsx';
-import Unifenas from './assets/pages/Unifenas.jsx';
-import Descubra from './assets/pages/Descubra.jsx';
-function App() {
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import NavBar from "./assets/components/Nav.jsx";
+import Footer from "./assets/components/Footer.jsx";
+import Ferramentas from "./assets/pages/Ferramentas.jsx";
+import Index from "./assets/pages/Index.jsx";
 
+import MODULOS_DATA from "./data/modulosData";
+import UpdatesPage from "./assets/pages/UpdatesPage.jsx";
+
+function App() {
   return (
-    <>
-      <Hero/>
-      <Descubra />
-      <Unifenas />
-      <Faq />
-      <Footer/>     
-      
-    </>
-  )
+    <BrowserRouter>
+      <NavBar />
+      <Routes>
+        <Route path="/" element={<Index />} />
+        <Route
+          path="/modulos/:tipo"
+          element={<Ferramentas todosModulos={MODULOS_DATA} />}
+        />
+        <Route path="/about" element={<UpdatesPage />} />
+        <Route path="*" element={<h1>404: Página Não Encontrada</h1>} />
+      </Routes>
+      <Footer />
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;
