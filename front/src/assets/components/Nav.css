@@ -21,14 +21,11 @@
 .navbar-scrolled {
   position: fixed;
   top: 10px;
-  left: 50%;
-  transform: translateX(-50%);
 
   width: 100vw;
   max-width: 1312px;
   padding: 16px 24px;
-  padding: 16px 24px;
-
+  left: calc(50% - 1312px / 2);
   background: rgba(255, 255, 255, 0.6);
   backdrop-filter: blur(8px);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -41,11 +38,11 @@
 /* Animação de entrada da navbar fixa */
 @keyframes slideDown {
   from {
-    transform: translate(-50%, -100%);
+    transform: translateY(-100%);
     opacity: 0;
   }
   to {
-    transform: translate(-50%, 0);
+    transform: translateY(0);
     opacity: 1;
   }
 }
@@ -189,7 +186,7 @@ a:hover {
 @media (max-width: 768px) {
   /* Layout principal */
   .navbar {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     transform: none;
@@ -197,17 +194,21 @@ a:hover {
     width: 100%;
     max-width: none;
     padding: 16px;
-    background-color: var(--neutro-000);
+    background-color: transparent;
     z-index: 100;
   }
 
   .navbar-scrolled {
-    top: 0;
-    left: 0;
-    transform: none;
-    width: 100%;
-    max-width: none;
-    border-radius: 0;
+    position: fixed;
+    width: calc(100% - 20px);
+    top: 10px;
+    left: 10px;
+    background-color: rgba(255, 255, 255, 0.6);
+  }
+
+  .navbar-scrolled.open-nav {
+    background-color: var(--neutro-000);
+    border-radius: 8px 8px 0px 0px;
   }
 
   /* Cabeçalho */
@@ -223,27 +224,29 @@ a:hover {
 
   /* Oculta os links por padrão */
   .nav-links {
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     width: 100%;
 
     background-color: var(--neutro-000);
-    border-radius: 0 0 24px 24px;
+    border-radius: 0 0 8px 8px;
     overflow: hidden;
 
     max-height: 0;
     transition: max-height 0.3s ease-out;
     position: absolute;
     top: 64px;
+    padding: 24px;
     left: 0;
     z-index: 99;
   }
 
   /* Abre o menu */
   .nav-links.open {
+    display: flex;
     max-height: 480px;
-    padding: 24px 0;
+    padding: 24px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   }
 
@@ -251,13 +254,25 @@ a:hover {
   .links-centrais {
     flex-direction: column;
     gap: 24px;
+    width: 100%;
+  }
+
+  .nav-item-dropdown {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+  }
+
+  .nav-item {
+    width: 100%;
   }
 
   .nav-links.open hr {
     display: block;
-    width: 80%;
+    width: 100%;
     border: none;
-    border-top: 1px solid var(--azul-principal);
+    border-top: 1px dashed var(--azul-claro-03);
   }
 
   .logo {
@@ -266,14 +281,15 @@ a:hover {
 
   /* Submenu no mobile (abre como bloco) */
   .submenu-links {
+    display: none;
+  }
+
+  .submenu-links.open {
+    display: block;
     position: static;
     opacity: 1;
     transform: none;
     pointer-events: auto;
     background: none;
-  }
-
-  .submenu-links a:hover {
-    background: var(--neutro-100);
   }
 }

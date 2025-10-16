@@ -101,7 +101,9 @@ function NavBar() {
           </div>
 
           <hr />
-          <a href="/about">Sobre o Projeto</a>
+          <a className="nav-item" href="/about">
+            Sobre o Projeto
+          </a>
           <hr />
         </div>
       </div>
