@@ -2,6 +2,8 @@ import React, { useState, useMemo } from "react";
 import { useParams } from "react-router-dom";
 import CardModulos from "../components/CardModulo";
 import Unifenas from "../pages/Unifenas";
+import HeroAlt from "../components/HeroAlt";
+import "./Ferramentas.css";
 
 function Ferramentas({ todosModulos }) {
   const { tipo } = useParams();
@@ -9,6 +11,7 @@ function Ferramentas({ todosModulos }) {
 
   const listaModulos = todosModulos[tipoModulo] || [];
   const tituloExibicao = tipoModulo === "professor" ? "Professores" : "Alunos";
+  const verboExibicao = tipoModulo === "professor" ? "ensino" : "aprendizado";
 
   const [paginaAtual, setPaginaAtual] = useState(1);
   const [ordenacao, setOrdenacao] = useState("asc");
@@ -45,15 +48,25 @@ function Ferramentas({ todosModulos }) {
 
   return (
     <main className="ferramentas-page-container">
-      <h1>Ferramentas de IA para {tituloExibicao}</h1>
-      <p>
-        Explore os módulos disponíveis e utilize as ferramentas que tornam seu
-        ensino mais dinâmico e eficiente.
-      </p>
+      <HeroAlt
+        tagDeContexto="MÓDULOS DE IA"
+        tituloPrincipal={
+          <>
+            Ferramentas de IA para <br />
+            <span className="texto_azul">{tituloExibicao}</span>
+          </>
+        }
+        subtitulo={
+          <>
+            Explore os módulos disponíveis e utilize as ferramentas que tornam
+            seu {verboExibicao} mais dinâmico e eficiente.
+          </>
+        }
+      />
 
       <div className="modulos-container">
         <div className="cabecalho">
-          <p className="contagem">{listaModulos.length} módulos disponíveis</p>
+          <p>{listaModulos.length} módulos</p>
           <button
             onClick={alternarOrdenacao}
             className="btn-ordenar"
@@ -70,7 +83,7 @@ function Ferramentas({ todosModulos }) {
             modulosExibidos.map((modulo, index) => (
               <CardModulos
                 key={modulo.id || index}
-                nome={modulo.titulo} // Passa 'titulo' como 'nome' para o CardModulos
+                nome={modulo.titulo}
                 descricao={modulo.descricao}
               />
             ))
@@ -84,7 +97,31 @@ function Ferramentas({ todosModulos }) {
             <span>
               Página {paginaAtual} de {totalPaginas}
             </span>
-            {/* ... (Botões de Paginação) ... */}
+            <button
+              onClick={() => setPaginaAtual((prev) => Math.max(1, prev - 1))}
+              disabled={paginaAtual === 1}
+            >
+              &lt;
+            </button>
+            {Array.from({ length: totalPaginas }, (_, i) => i + 1).map(
+              (numero) => (
+                <button
+                  key={numero}
+                  onClick={() => setPaginaAtual(numero)}
+                  className={numero === paginaAtual ? "active" : ""}
+                >
+                  {numero}
+                </button>
+              )
+            )}
+            <button
+              onClick={() =>
+                setPaginaAtual((prev) => Math.min(totalPaginas, prev + 1))
+              }
+              disabled={paginaAtual === totalPaginas}
+            >
+              &gt;
+            </button>
           </div>
         )}
       </div>

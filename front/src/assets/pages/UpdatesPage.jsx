@@ -32,7 +32,6 @@ function UpdatesPage() {
       <Atualizacoes />
       <div style={linhaDivisoria}></div>
       <Faq />
-      <Footer />
     </>
   );
 }

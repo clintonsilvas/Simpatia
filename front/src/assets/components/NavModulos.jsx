@@ -86,7 +86,7 @@ function NavModulos() {
 
         {/* Render dinâmico da lista */}
         <div className="content-grid-modulos">
-          {MODULOS_DATA[selecionado].map((modulo, index) => (
+          {MODULOS_DATA[selecionado].slice(0, 3).map((modulo, index) => (
             <div key={index} className="op-modulo">
               <span className="heading-18-semi tipo modulo">
                 <svg
