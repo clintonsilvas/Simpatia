@@ -4,7 +4,7 @@ import "./Hero.css";
 function HeroAlt({ tagDeContexto, tituloPrincipal, subtitulo }) {
  return (
   <section className="fundo-hero">
-   <NavBar />
+   {/* <NavBar /> */}
    <div className="secao-hero-alt">
     <div className="hero-container-alt">
      

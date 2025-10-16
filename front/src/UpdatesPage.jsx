@@ -3,6 +3,7 @@ import Faq from './assets/pages/Faq.jsx';
 import Footer from './assets/components/Footer.jsx';
 import UnifenasAlt from './assets/pages/UnifenasAlt.jsx';
 import Atualizacoes from './assets/components/Atualizacoes.jsx';
+import NavBar from "./assets/components/Nav.jsx";
 import './UpdatesPage.css'; 
 
 function UpdatesPage() {
@@ -16,6 +17,7 @@ function UpdatesPage() {
 
  return (
   <div className="updates-page-container">
+    <NavBar/>
    <HeroAlt
    tagDeContexto="ATUALIZAÇÕES"
    tituloPrincipal={
