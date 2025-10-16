@@ -1,40 +1,8 @@
 import React, { useState } from "react";
 import "./NavModulos.css";
-
+import MODULOS_DATA from "../../data/modulosData";
 function NavModulos() {
   const [selecionado, setSelecionado] = useState("professor");
-
-  // 🔹 Listas de módulos organizadas
-  const modulos = {
-    professor: [
-      {
-        titulo: "Gerenciar Turmas",
-        descricao: "Controle completo de alunos e turmas.",
-      },
-      {
-        titulo: "Avaliações",
-        descricao: "Crie e acompanhe provas e notas.",
-      },
-      {
-        titulo: "Relatórios",
-        descricao: "Analise o desempenho das turmas.",
-      },
-    ],
-    aluno: [
-      {
-        titulo: "Meus Cursos",
-        descricao: "Acesse todo o conteúdo em um só lugar.",
-      },
-      {
-        titulo: "Assistente IA",
-        descricao: "Receba ajuda personalizada nos estudos.",
-      },
-      {
-        titulo: "Calendário",
-        descricao: "Veja suas aulas e prazos facilmente.",
-      },
-    ],
-  };
 
   return (
     <div className="container-campo-recolhivel">
@@ -118,7 +86,7 @@ function NavModulos() {
 
         {/* Render dinâmico da lista */}
         <div className="content-grid-modulos">
-          {modulos[selecionado].map((modulo, index) => (
+          {MODULOS_DATA[selecionado].map((modulo, index) => (
             <div key={index} className="op-modulo">
               <span className="heading-18-semi tipo modulo">
                 <svg
