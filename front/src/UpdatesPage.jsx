@@ -24,8 +24,8 @@ function UpdatesPage() {
       } 
       subtitulo={
       <>
-        Ferramentas criadas para apoiar alunos e professores <br />
-        na sala de aula.
+        Ferramentas criadas para apoiar alunos e <br />
+        professores na sala de aula.
       </>
       } 
     />
