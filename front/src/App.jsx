@@ -1,11 +1,11 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import NavBar from "./assets/components/Nav.jsx";
 import Footer from "./assets/components/Footer.jsx";
-import Unifenas from "./assets/pages/Unifenas.jsx";
 import Ferramentas from "./assets/pages/Ferramentas.jsx";
 import Index from "./assets/pages/Index.jsx";
 
 import MODULOS_DATA from "./data/modulosData";
+import UpdatesPage from "./assets/pages/UpdatesPage.jsx";
 
 function App() {
   return (
@@ -17,7 +17,7 @@ function App() {
           path="/modulos/:tipo"
           element={<Ferramentas todosModulos={MODULOS_DATA} />}
         />
-        <Route path="/about" element={<Unifenas />} />
+        <Route path="/about" element={<UpdatesPage />} />
         <Route path="*" element={<h1>404: Página Não Encontrada</h1>} />
       </Routes>
       <Footer />
