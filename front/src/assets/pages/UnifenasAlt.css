@@ -61,7 +61,7 @@
 
 .unifenas-bold-alt {
   color: #FFF;
-  font-family: var(Inter);
+  font-family: var(--font-family);
   font-size: 40px;
   font-style: normal;
   font-weight: 800;
@@ -108,11 +108,19 @@
     padding: 16px;
     max-width: 256px;
     gap: 16px;
+    text-align: center;
   }
+  
+  .frame-tag-alt,
+  .texto-descricao-page-alt {
+    align-self: center;
+  }
+
   .titulo-unifenas-page-alt{
     font-size: var(--heading-24-size);
     font-weight: 600;
     line-height: 120%;
+    align-self: center;
   }
   .unifenas-bold-alt {
     font-size: var(--heading-24-size);
