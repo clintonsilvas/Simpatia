@@ -1,8 +1,8 @@
-import NavBar from "../components/Nav";
-import ButtonConhecerModulos from "../components/ButtonConhecerModulos";
+import NavBar from "./Nav";
+import ButtonConhecerModulos from "./ButtonConhecerModulos";
 import "./Hero.css";
-import ButtonUnifenas from "../components/ButtonUnifenas";
-import CarroselFotos from "../components/CarroselFotos";
+import ButtonUnifenas from "./ButtonUnifenas";
+import CarroselFotos from "./CarroselFotos";
 import React, { useState, useEffect } from "react";
 
 function Hero() {

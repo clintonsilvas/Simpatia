@@ -1,7 +1,6 @@
 import HeroAlt from "../components/HeroAlt.jsx";
-import Faq from "../pages/Faq.jsx";
-import Footer from "../components/Footer.jsx";
-import UnifenasAlt from "./UnifenasAlt.jsx";
+import Faq from "../components/Faq.jsx";
+import UnifenasAlt from "../components/UnifenasAlt.jsx";
 import Atualizacoes from "../components/Atualizacoes.jsx";
 function UpdatesPage() {
   const linhaDivisoria = {

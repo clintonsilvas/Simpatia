@@ -3,7 +3,7 @@ const MODULOS_DATA = {
         { titulo: "Gerenciar Turmas", descricao: "Controle completo de alunos e turmas.", id: 'p1' },
         { titulo: "Avaliações", descricao: "Crie e acompanhe provas e notas.", id: 'p2' },
         { titulo: "Relatórios", descricao: "Analise o desempenho das turmas.", id: 'p3' },
-        { titulo: "Gerenciar Turmas", descricao: "Controle completo de alunos e turmas.", id: 'p1' },
+        { titulo: "Gerenciar Turmas", descricao: "Controle completo de alunos e turmas.", id: 'p4' },
         { titulo: "Avaliações", descricao: "Crie e acompanhe provas e notas.", id: 'p2' },
         { titulo: "Relatórios", descricao: "Analise o desempenho das turmas.", id: 'p3' },
         { titulo: "Gerenciar Turmas", descricao: "Controle completo de alunos e turmas.", id: 'p1' },
