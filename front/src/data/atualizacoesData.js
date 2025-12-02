@@ -8,17 +8,29 @@ const FEATURES = [
       "Luiz Felipe dos Reis Baldini",
       "Rafael Oliveira de Carvalho Lopes",
       "Samuel Nogueira da Silva"
-    ],
-    links: ["www.github.com/simpatia", "www.unifenas.br"],
+    ],    
     topicos: {
-      introducao: "A reformulação do front-end teve como objetivo criar uma base visual sólida e escalável. O sistema recebeu uma interface renovada, com navegação mais direta e padrões visuais unificados.",
-      escolhas: "Paleta de cores: tons claros, azul como primário e roxo para ações. Tipografia hierarquizada. Ícones baseados em Phosphor Icons com foco na consistência.",
+      links: {
+        descricao:"",
+        links:   [
+          "https://github.com/clintonsilvas/Simpatia", 
+          "https://www.unifenas.br"
+        ]      
+      },
+      introducao: "A equipe foi responsável por reformular a interface principal do sistema, tornando-a mais clara, responsiva e acessível tanto para professores quanto para alunos. O foco foi criar uma experiência consistente e intuitiva, que pudesse ser facilmente escalada para novos módulos.",
+      escolhas: `
+      Paleta de cores: Definimos como padrão fundos claros para uma experiência suave. Azul foi mantido como cor primária de identidade, e roxo como cor de ação.
+      Tipografia: Adotamos uma hierarquia simples com títulos em destaque e textos secundários neutros para melhorar a leitura em qualquer dispositivo.
+      Ícones: Optamos pela biblioteca Phosphor Icons, priorizando a versão Regular para manter consistência visual.
+      `,
+
       processo: "Planejamento no Figma, criação do design system, componentização com React + Tailwind, testes internos e ajustes de contraste e espaçamento.",
-      fotos: [
-        "/atualizacoes/atualizacao-frontend-1.png",
-        "/atualizacoes/atualizacao-frontend-2.png",
-        "/atualizacoes/atualizacao-frontend-3.png"
-      ],
+      fotos: {
+        descricao: "",
+        fotos: [          
+          "/fotos-features/imagem2.png"
+        ]
+      },      
       conclusao: "A nova interface tornou o sistema mais modular, acessível e preparado para receber novos módulos de forma consistente."
     },
     id: 1
