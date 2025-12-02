@@ -1,7 +1,7 @@
-import Hero from "./Hero";
-import Descubra from "./Descubra";
-import Unifenas from "./Unifenas";
-import Faq from "./Faq";
+import Hero from "../components/Hero";
+import Descubra from "../components/Descubra";
+import Unifenas from "../components/Unifenas";
+import Faq from "../components/Faq";
 
 function Index() {
   return (

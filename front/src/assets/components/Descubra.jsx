@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-import CardModulo from "../components/CardModulo";
-import ButtonConhecerModulos from "../components/ButtonConhecerModulos";
+import CardModulo from "./CardModulo";
+import ButtonConhecerModulos from "./ButtonConhecerModulos";
 import "./Descubra.css";
 
 function Descubra() {

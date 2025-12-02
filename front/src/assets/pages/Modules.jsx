@@ -1,9 +1,9 @@
 import React, { useState, useMemo } from "react";
 import { useParams } from "react-router-dom";
 import CardModulos from "../components/CardModulo";
-import Unifenas from "../pages/Unifenas";
+import Unifenas from "../components/Unifenas";
 import HeroAlt from "../components/HeroAlt";
-import "./Ferramentas.css";
+import "./Modules.css";
 
 function Ferramentas({ todosModulos }) {
   const { tipo } = useParams();
