@@ -158,9 +158,14 @@
     .titulo-atualizacoes {
         font-size: var(--heading-24-size); 
     }
+    .lista-topicos{
+        align-items: center;
+        justify-content: center;
+    }
 
     .item-topico-container {
         gap: 16px;
+        width: 80vw;
     }
 
     .frame-icone-topico {
@@ -181,6 +186,7 @@
     .titulo-topico {
         font-size: var(--heading-18-size);
         line-height: var(--heading-18-line);
+        white-space: normal;        
     }
     
     .data-topico {

@@ -74,7 +74,14 @@ function Feature() {
           </div>
         </div>
       </section>
-      <section className="infor"></section>
+
+      <section className="infor">
+        <Scrollspy
+          topicos={listaDeTopicos}
+          informacoes={informacoesDosTopicos}
+          links={linksDoFeature}
+        />
+      </section>
       <Unifenas />
     </div>
   );
