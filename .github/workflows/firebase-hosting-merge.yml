@@ -10,7 +10,7 @@ jobs:
       - uses: actions/checkout@v4
 
       # Vá para a pasta front antes de instalar e buildar
-      - name: Install dependencies and build
+      - name: Install dependencies and buil
         run: |
           cd front
           npm ci
