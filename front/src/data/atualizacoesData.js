@@ -247,6 +247,130 @@ const FEATURES = [
       },
       id: 5
   },
+  {           
+      titulo: "Gerador de Plano de Aula ", 
+      data: "NOVEMBRO DE 2025",
+      descricao: "O projeto é uma solução desenhada para agilizar a criação de planos de aula. Ele permite que os professores gerem rapidamente um esboço completo do plano de aula gerando um prompt e, em seguida utiliza de uma interface de chat para edita-lo e personaliza-lo de forma intuitiva, otimizando drasticamente o tempo de planejamento.",
+      equipe: [
+        "Maria Eduarda Marques",
+        "Talles Gabriel",
+        "Hiago Augusto",
+        "Geovana Fernandes "             
+      ],    
+      topicos: {
+        links: {
+          descricao:"",
+          links:   [
+            ""          
+          ]      
+        },
+        introducao: `
+        A elaboração de planos de aula detalhados é uma etapa fundamental, mas frequentemente dispendiosa em tempo e esforço, na rotina dos educadores. O presente trabalho aborda essa ineficiência propondo uma solução tecnológica de ponta voltada especificamente para professores e educadores. O problema do planejamento manual é resolvido com automação do rascunho inicial, enquanto a flexibilidade e personalização são garantidas por interface de chat intuitiva. Essa proposta de solução transforma o planejamento em processo ágil, permitindo aos educadores editar, refinar e adaptar o plano de aula gerado conforme suas necessidades pedagógicas específicas, assegurando que possam focar na qualidade e menor burocracia do processo.                     
+        `,
+         escolhas: `
+          Geração Rápida de Planos de Aula: O módulo cria um rascunho completo e personalizável a partir dos dados inseridos pelo professor, acelerando todo o processo.
+          Tecnologias Utilizadas: API Gemini para geração e edição do plano; JavaScript para lógica e integração; Tailwind CSS para o layout responsivo e profissional.
+`,
+        processo: `        
+          Arquitetura e Processo: Construído como uma SPA, estruturada para gerar e manipular um plano em JSON, garantindo organização e edição eficiente no front-end.
+
+          Desafios e Soluções: Ajustes no prompt e no retorno JSON foram necessários; o problema do PDF foi resolvido com um mockup HTML que garantiu fidelidade ao modelo do professor.
+
+          Funcionalidades Entregues: Geração automática do plano, chat interativo para edição e exportação final para PDF com formatação padronizada.
+        
+          `,
+        fotos: {
+          descricao: "",
+          fotos: [  
+            "/fotos-features/geradorplanodeaula.jpg"
+          ]
+        },      
+        conclusao: "Em suma, os resultados obtidos com o módulo de Geração de Planos de Aula com IA são extremamente positivos, validando a premissa de que a tecnologia pode, de fato, reduzir a carga burocrática dos professores, resultando em planos detalhados e personalizados gerados em uma fração do tempo usual. O principal aprendizado da equipe técnica reside na maestria da Engenharia de Prompt, que se mostrou essencial para forçar o Gemini a aderir a formatos pedagógicos rígidos e estruturados, e na eficácia de tecnologias como o Tailwind CSS para prototipagem rápida e responsiva. Para melhorias futuras, o módulo está pronto para evoluir, incorporando recursos cruciais como a integração direta e para exportação automática, a criação de perfis de usuário com repositórios de planos salvos e a inclusão de um recurso de feedback e avaliação de planos por pares, solidificando sua posição como uma ferramenta indispensável no ecossistema educacional."
+      },
+      id: 6
+  },
+  {           
+      titulo: "Ajuda Inteligencia Artificial ", 
+      data: "OUTUBRO DE 2025",
+      descricao: "O módulo é composto por agentes de IA especializados em diversas áreas do conhecimento. Cada agente é orientado a conduzir o aluno no processo de construção do próprio entendimento, promovendo aprendizado ativo e evitando a simples entrega direta das respostas.",
+      equipe: [
+        "Anderson Caproni de Oliveira",
+        "Leonardo de Paula Paiva", 
+        "Lucca valladão e Marchetti", "Rafael Costa Monte Alegre", 
+        "Kawe Henrique de Oliveira Pereira"                  
+      ],    
+      topicos: {
+        links: {
+          descricao:"",
+          links:   [
+            "https://github.com/AndersonCaproni/simpatia"          
+          ]      
+        },
+        introducao: `
+O módulo apresenta um conjunto de agentes de IA especializados, cada um responsável por atuar em uma área específica do conhecimento. Ele foi desenvolvido para auxiliar estudantes que têm dúvidas pontuais, oferecendo orientação estruturada e conduzindo-os ao raciocínio correto, em vez de entregar respostas prontas. Dessa forma, o módulo resolve o problema da aprendizagem passiva, promovendo um aprendizado mais ativo, guiado e personalizado. Sua proposta geral é fornecer múltiplos chats independentes, cada qual com um agente capacitado em determinado domínio, garantindo suporte educacional direcionado, eficaz e alinhado às necessidades do aluno.        `,
+         escolhas: `
+O módulo foi idealizado com o objetivo de fornecer um ambiente de aprendizado assistido por inteligência artificial, no qual o aluno possa interagir com agentes especializados e, por meio dessa interação, ser conduzido ao entendimento de suas dúvidas sem receber respostas imediatas ou superficiais. A proposta central consiste em promover aprendizado ativo, incentivando o desenvolvimento de autonomia e pensamento crítico.
+
+Para a implementação do módulo, utilizou-se a stack composta por React, Vite como ferramenta de build e o serviço de IA Gemini, responsável pelo processamento das interações. O processo de criação foi conduzido em etapas bem definidas: inicialmente realizou-se o planejamento das funcionalidades e do fluxo de interação do estudante; em seguida, o módulo passou pela etapa de design, na qual foram estabelecidos os layouts, a lógica de navegação e a identidade visual dos agentes. Posteriormente, iniciou-se a fase de implementação, estruturando a arquitetura do projeto, definindo os componentes, configurando o serviço de IA e integrando cada agente às suas respectivas áreas de especialização.`,
+ processo: `        
+          Após a construção das funcionalidades principais, o módulo passou por uma etapa de testes a fim de garantir a consistência da comunicação com o serviço de IA, o desempenho adequado do chat e a estabilidade geral da solução. Por fim, realizou-se o deploy, disponibilizando o módulo para uso dentro da plataforma. Não foram identificados desafios relevantes durante o desenvolvimento, o que permitiu um fluxo de criação contínuo e eficiente.
+
+O resultado entregue contempla um conjunto de agentes de IA especializados em diferentes áreas, operando em chats independentes. Cada agente conduz o aluno em um diálogo pedagógico estruturado, estimulando-o a refletir, explorar conceitos e construir sua própria linha de raciocínio. Dessa forma, o módulo oferece um ambiente interativo de perguntas e respostas no qual o estudante insere sua dúvida e recebe orientação progressiva até alcançar a solução.
+          `,
+        fotos: {
+          descricao: "",
+          fotos: [  
+            "/fotos-features/ajudaia1.png",
+            "/fotos-features/ajudaia4.png"
+          ]
+        },      
+        conclusao: `
+        O desenvolvimento do módulo resultou em uma solução educacional robusta, organizada e eficaz no apoio ao processo de aprendizagem dos estudantes. A experiência obtida pela equipe reforçou a importância do uso de agentes especializados para aumentar a qualidade da orientação oferecida, além de demonstrar a relevância de uma interface clara, objetiva e direcionada ao usuário final. Como melhorias futuras, considera-se a possibilidade de ampliar o número de agentes especializados, incorporar métricas de acompanhamento de desempenho do aluno e implementar novos recursos de personalização, de modo a tornar a plataforma ainda mais dinâmica, adaptativa e eficiente no apoio pedagógico.
+          `
+      },
+      id: 7
+  },
+  {           
+      titulo: "Simpático IA , Oratória", 
+      data: "NOVEMBRO DE 2025",
+      descricao: "Uma aplicação Web para treinar argumentação através de debates com IA",
+      equipe: [
+        "Anderson Caproni de Oliveira",
+        "Leonardo de Paula Paiva", 
+        "Lucca valladão e Marchetti", "Rafael Costa Monte Alegre", 
+        "Kawe Henrique de Oliveira Pereira"                  
+      ],    
+      topicos: {
+        links: {
+          descricao:"",
+          links:   [
+            "https://github.com/Talysson19/Simpatico-IA---Oratoria.git"          
+          ]      
+        },
+        introducao: `
+          Módulo para treinar argumentação dos alunos
+        `,
+         escolhas: `
+         Uma das principais melhorias propostas é a modernização da interface do sistema, utilizando React e TypeScript para garantir uma experiência mais fluida, intuitiva e responsiva para o usuário.
+
+        `,
+          processo: `        
+          Uma das principais melhorias propostas é a modernização da interface do sistema, utilizando React e TypeScript para garantir uma experiência mais fluida, intuitiva e responsiva para o usuário.
+          `,
+        fotos: {
+          descricao: "",
+          fotos: [  
+            "/fotos-features/ajudaia1.png",
+            "/fotos-features/ajudaia4.png"
+          ]
+        },      
+        conclusao: `
+        Atualização da interface dentro dos padrões que foram pedidos
+
+          `
+      },
+      id: 8
+  },
 ];
 
 export default FEATURES;
