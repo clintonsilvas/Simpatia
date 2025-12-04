@@ -11,8 +11,7 @@ jobs:
 
       # Vá para a pasta front antes de instalar e buildar
       - name: Install dependencies and buil
-        run: |
-          cd front
+        run: cd front
           npm ci
           npm run build
 
