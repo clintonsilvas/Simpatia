@@ -51,7 +51,7 @@ function Hero() {
           <div className="botoes">
             <ButtonConhecerModulos
               texto="Quero conhecer os módulos!"
-              mostrarIcone={true}
+              mostrarIcone={false}
             />
             <ButtonUnifenas />
           </div>
