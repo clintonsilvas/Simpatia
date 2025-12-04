@@ -26,9 +26,9 @@ function Unifenas() {
           </div>
         </div>
         <div className="imagem-unifenas">
-          <div className="eclipse-sobreposto">
+          {/* <div className="eclipse-sobreposto">
             <EclipseGiratoria />
-          </div>
+          </div> */}
           <img src="/fachadaunifenas.png" alt="Logo Unifenas" />
         </div>
       </div>
