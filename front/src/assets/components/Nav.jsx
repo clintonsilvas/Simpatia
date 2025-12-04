@@ -55,7 +55,7 @@ function NavBar() {
       {/* Cabeçalho da navbar: logo + menu hambúrguer */}
       <div className="navbar-header">
         <a href="/">
-          <img src="/logo-simpatia.svg" alt="Logo" className="logo" />
+          <img src="/logosimpatia.svg" alt="Logo" className="logo" />
         </a>
 
         <div className="hamburger-menu" onClick={handleMenuClick}>
