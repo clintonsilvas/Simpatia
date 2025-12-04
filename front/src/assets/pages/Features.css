@@ -104,5 +104,10 @@
     flex-direction: column;
     gap: 8px;    
   }
+  .infor{
+    display: block;
+    padding: 32px;
+    align-items: center;
+  }
 
 }

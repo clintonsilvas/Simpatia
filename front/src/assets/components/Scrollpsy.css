@@ -94,21 +94,20 @@
   line-height: var(--heading-18-height);
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
   .scrollspy-container{
     flex-direction: column;
-    margin-top: 32px;
+    margin-top: 64px;
+    width: 80vw;
   }
   .scrollpsy-sidebar {
     flex-direction: row;
     overflow-x: auto;
-    padding: 0;
-    gap: 16px;
-    margin-bottom: 32px;
+    padding: 0;    
   }
   .sidebar-list{
     flex-direction: row;
-    gap: 16px;
+    gap: 0;
   }
   .scrollspy-content {
     width: 100%;
@@ -117,7 +116,14 @@
   .section-gallery{
     max-width: 100%;
   }
-  .section-links{
-    min-width: 100%;
+  .links-section{
+    width: 100%;    
+  }
+
+  .sidebar-button{
+    font-size: var(--body-14-semi-size);    
+  }
+  .section-links a{
+    font-size: var(--body-14-semi-size); 
   }
 }
