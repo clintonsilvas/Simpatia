@@ -1,4 +1,4 @@
-import "../pages/Hero.css";
+import "../components/Hero.css";
 
 function HeroAlt({ tagDeContexto, tituloPrincipal, subtitulo }) {
   return (

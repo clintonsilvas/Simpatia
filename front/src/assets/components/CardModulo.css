@@ -10,6 +10,7 @@
   border: 1px solid var(--neutro-200);
   background: var(--neutro-100);
   box-shadow: 0 4px 16px 0 rgba(76, 75, 103, 0.08);
+  max-height: 300px;
 }
 
 .card-modulo:hover {

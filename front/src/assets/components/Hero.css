@@ -77,6 +77,11 @@
   gap: 16px;
   height: fit-content;
   margin-bottom: 80px;
+  width: 400px;
+}
+
+.botoes a {
+  width: 100%;
 }
 
 @media screen and (max-width: 768px) {
@@ -91,6 +96,16 @@
     margin: 0px;
     align-items: flex-end;
     justify-content: start;
+  }
+
+  .botoes {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    height: fit-content;
+    margin-bottom: 80px;
+    width: 100%;
   }
 
   .hero-container {
@@ -116,6 +131,7 @@
   .botoes {
     align-items: center;
   }
+
   .hero-container h1 {
     font-size: var(--heading-32-size);
     margin: 0;
@@ -126,33 +142,34 @@
   display: inline-block;
   margin-left: 2px;
   width: 2px;
-  background-color: #007bff; /* mesma cor do texto azul */
+  background-color: #007bff;
+  /* mesma cor do texto azul */
   animation: blink 0.8s infinite;
 }
 
 
 /*--- ESTILOS PARA HERO ALT (VERSÃO SECUNDÁRIA) --- */
 .secao-hero-alt {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    margin-top: 88px;
-    margin-bottom: 88px;
-    padding: 0 40px;
-    width: 100%;
-    max-width: 1312px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 88px;
+  margin-bottom: 88px;
+  padding: 0 40px;
+  width: 100%;
+  max-width: 1312px;
 }
 
 .hero-container-alt {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 16px;
-    max-width: 800px;
-    width: 100%;
-    margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 16px;
+  max-width: 800px;
+  width: 100%;
+  margin: 0;
 }
 
 .tag-contexto-hero {
@@ -164,7 +181,7 @@
 
   border-radius: 4px;
   background: var(--azul-principal);
-  
+
   color: var(--azul-claro-03);
   text-align: center;
   font-size: 18px;
@@ -175,41 +192,43 @@
 
 @media screen and (max-width: 768px) {
   .secao-hero-alt {
-    margin-top: 10vh; 
+    margin-top: 10vh;
     padding: 0 24px;
   }
 
   .hero-container-alt h1 {
-      font-size: var(--heading-32-size);
-      margin: 0;
-    }
-  }
-
-  .hero-container-alt h1 {
-    font-size: var(--heading-64-size);
-    font-weight: var(--heading-64-weight);
-    color: var(--neutro-700);
+    font-size: var(--heading-32-size);
     margin: 0;
   }
+}
 
-  .hero-container-alt .texto_azul {
-    color: var(--azul-principal);
-    font-weight: 800;
-  }
+.hero-container-alt h1 {
+  font-size: var(--heading-64-size);
+  font-weight: var(--heading-64-weight);
+  color: var(--neutro-700);
+  margin: 0;
+}
 
-  .hero-container-alt p {
-    font-size: var(--body-18-medium-size);
-    font-weight: var(--body-18-medium-weight);
-    line-height: var(--body-18-medium-line);
-    margin: 0;
-    color: var(--neutro-500);
-  }
+.hero-container-alt .texto_azul {
+  color: var(--azul-principal);
+  font-weight: 800;
+}
+
+.hero-container-alt p {
+  font-size: var(--body-18-medium-size);
+  font-weight: var(--body-18-medium-weight);
+  line-height: var(--body-18-medium-line);
+  margin: 0;
+  color: var(--neutro-500);
+}
 
 @keyframes blink {
+
   0%,
   50% {
     opacity: 1;
   }
+
   51%,
   100% {
     opacity: 0;
