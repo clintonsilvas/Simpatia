@@ -1,8 +1,8 @@
 const MODULOS_DATA = {
     professor: [
-        { titulo: "Gerenciar Turmas", descricao: "Controle completo de alunos e turmas.", link:"https://unifenas.br", id: 'p1' },
-        { titulo: "Avaliações", descricao: "Crie e acompanhe provas e notas.", id: 'p2' },
-        { titulo: "Relatórios", descricao: "Analise o desempenho das turmas.", id: 'p3' },
+        { titulo: "Gerador de questões Objetivas", descricao: "Gere questões por disciplina, tópico e dificuldade.", link:"https://unifenas.br", id: 'p1' },
+        { titulo: "Gerador de Questões Descritivas", descricao: "Crie e corrija questões descritivas",link:"https://unifenas.br", id: 'p2' },
+        { titulo: "Acessibilidade Checker", descricao: "Avalie rapidamente a acessibilidade de páginas web.",link:"https://unifenas.br", id: 'p3' },
         { titulo: "PROF4", descricao: "Controle completo de alunos e turmas.", id: 'p4' },
         { titulo: "PROF5", descricao: "Crie e acompanhe provas e notas.", id: 'p5' },
         { titulo: "PROF6", descricao: "Analise o desempenho das turmas.", id: 'p6' },

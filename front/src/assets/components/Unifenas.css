@@ -41,7 +41,7 @@
   line-height: var(--heading-40-line);
 }
 
-.texto-unifenas span {
+.texto-unifenas strong {
   color: var(--azul-principal);
 }
 

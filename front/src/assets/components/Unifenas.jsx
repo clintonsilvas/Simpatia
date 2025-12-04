@@ -9,7 +9,7 @@ function Unifenas() {
         <div className="texto-unifenas">
           <h2>SOBRE</h2>
           <h3>
-            Projeto desenvolvido por alunos da <span>Unifenas</span>
+            Projeto desenvolvido por alunos da <strong>Unifenas</strong>
           </h3>
           <p>
             O SIMPATIA é um sistema desenvolvido por alunos do curso de Ciência

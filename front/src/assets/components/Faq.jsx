@@ -20,13 +20,25 @@ function ServicosPage() {
           Artificial para apoiar professores e alunos em atividades
           educacionais.
         </Acordion>
-        <Acordion pergunta="Quais serviços vocês oferecem?">
-          Oferecemos uma variedade de serviços, incluindo desenvolvimento de
-          websites, aplicativos móveis e consultoria em tecnologia.
+        <Acordion pergunta="Quem pode usar o SIMPATIA?">
+          Tanto professores quanto alunos podem se beneficiar do SIMPATIA. Cada
+          um com acessos aos módulos e funcionalidades específicas para suas
+          necessidades.
         </Acordion>
-        <Acordion pergunta="Posso solicitar um orçamento?">
-          Sim! Você pode entrar em contato conosco através do nosso site para
-          solicitar um orçamento personalizado para o seu projeto.
+        <Acordion pergunta="Quais são os principais módulos disponíveis?">
+          Gerador de Plano de Aula. Gerador de Questões. Agente de conversa por
+          disciplina. Outras ferramentas educacionais baseadas em IA.
+        </Acordion>
+        <Acordion pergunta="Quem desenvolveu o SIMPATIA?">
+          O Simpatia está sendo desenvolvido por uma equipe de estudantes da
+          Unifenas, sob a orientação do professor Dr. Celso de Avila Ramos. A
+          cada ano novos alunos se juntam ao projeto para contribuir com seu
+          desenvolvimento.
+        </Acordion>
+        <Acordion pergunta="As respostas do agente de IA são confiáveis?">
+          De forma geral, sim. O agente utiliza modelos avançados de IA para
+          fornecer respostas precisas. No entanto, recomendamos que os usuários
+          verifiquem as informações críticas para garantir sua exatidão.
         </Acordion>
       </div>
     </div>

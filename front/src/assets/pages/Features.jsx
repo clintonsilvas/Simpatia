@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import FEATURES from "../../data/atualizacoesData";
 import "./Features.css";
@@ -9,6 +9,12 @@ function Feature() {
   const { id } = useParams();
 
   const featureAtual = FEATURES.find((item) => String(item.id) === String(id));
+  const refTopo = useRef(null);
+  useEffect(() => {
+    if (refTopo.current) {
+      refTopo.current.scrollIntoView({ behavior: "smooth" });
+    }
+  }, []);
 
   const listaDeTopicos = Object.keys(featureAtual.topicos)
     .filter((k) => k !== "links")
@@ -37,6 +43,7 @@ function Feature() {
 
   return (
     <div>
+      <div ref={refTopo}></div>
       <section className="apresentacao">
         <div className="titulo-data">
           <p className="data-topico">{featureAtual.data}</p>
