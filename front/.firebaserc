@@ -1,6 +1,6 @@
 {
   "projects": {
-    "default": "simpatia-unifenas",
+    "default": "simpatiaunifenas",
     "simpatia-unifenas": "simpatia-unifenas"
   },
   "targets": {},
