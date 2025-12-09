@@ -1,0 +1,29 @@
+# Este arquivo foi gerado automaticamente pelo Firebase CLI
+# https://github.com/firebase/firebase-tools
+
+name: Deploy to Firebase Hosting on PR
+on: pull_request
+permissions:
+  checks: write
+  contents: read
+  pull-requests: write
+
+jobs:
+  build_and_preview:
+    if: ${{ github.event.pull_request.head.repo.full_name == github.repository }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # CORREÇÃO APLICADA AQUI
+      - name: Build and Install in Front Directory
+        run: npm ci && npm run build
+        working-directory: front # <--- NOVO: Garante a execução na subpasta 'front'
+
+      - uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          repoToken: ${{ secrets.GITHUB_TOKEN }}
+          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_SIMPATIAUNIFENAS }}
+          projectId: simpatiaunifenas
+          # OPCIONAL, mas recomendado se o firebase.json estiver dentro de 'front'
+          entryPoint: front
