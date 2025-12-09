@@ -261,7 +261,7 @@ const FEATURES = [
         links: {
           descricao:"",
           links:   [
-            ""          
+            "https://github.com/Tallesdev/SimpatiaPlanoAula.git"          
           ]      
         },
         introducao: `
@@ -335,10 +335,7 @@ O resultado entregue contempla um conjunto de agentes de IA especializados em di
       data: "NOVEMBRO DE 2025",
       descricao: "Uma aplicação Web para treinar argumentação através de debates com IA",
       equipe: [
-        "Anderson Caproni de Oliveira",
-        "Leonardo de Paula Paiva", 
-        "Lucca valladão e Marchetti", "Rafael Costa Monte Alegre", 
-        "Kawe Henrique de Oliveira Pereira"                  
+        "Talysson De Moura Da Silva"                  
       ],    
       topicos: {
         links: {
@@ -371,6 +368,47 @@ O resultado entregue contempla um conjunto de agentes de IA especializados em di
       },
       id: 8
   },
+  {           
+      titulo: "Gerador de plano de estudos ", 
+      data: "NOVEMBRO DE 2025",
+      descricao: "O projeto é um gerador de plano de estudos inteligente para auxiliar o aluno na busca de um direcionamento e uma melhor organização do seu tempo.",
+      equipe: [
+        "Davi Costa Caetano",
+        "Jonas Cézar Firmino da Silva", 
+        "Rodolfo André de Souza"                  
+      ],    
+      topicos: {
+        links: {
+          descricao:"",
+          links:   [
+            "https://github.com/tifilial736/SimpatiaIA.git"          
+          ]      
+        },
+        introducao: `
+          Nosso site foi criado, para que, com ele o aluno/estudante, de uma maneira intuitiva e prática, consiga organizar um plano de estudos, de acordo com a realidade de sua rotina.
+        `,
+         escolhas: `
+O módulo gerador de plano de ensino foi concebido com o propósito de otimizar a elaboração e a padronização de documentos acadêmicos, oferecendo aos docentes uma ferramenta automatizada, estruturada e de fácil utilização. Para sua implementação, adotou-se uma arquitetura baseada na biblioteca React, complementada por React Router, Context API, Styled Components e Axios. Os testes funcionais e de interface foram conduzidos com Jest e Testing Library, assegurando a confiabilidade dos componentes desenvolvidos.
+
+O processo de desenvolvimento iniciou-se pela modelagem da interface e definição da experiência do usuário, com a elaboração de wireframes que orientaram a organização das seções do plano de ensino. A seguir, foi estruturada a arquitetura interna do módulo, priorizando modularidade, reutilização de componentes e clareza no fluxo de dados. A implementação contemplou formulários dinâmicos, validações automatizadas e hooks personalizados para gerenciamento de estado e integração com a API.
+        `,
+          processo: `        
+Diversos desafios foram enfrentados ao longo do desenvolvimento, especialmente relacionados ao desempenho da interface e à padronização dos modelos de exportação. A otimização da renderização dos componentes e o uso de memorização permitiram resolver problemas de desempenho; já a criação de um sistema de templates possibilitou a adaptação do documento final a diferentes padrões institucionais.
+
+Como resultado, o módulo entrega funcionalidades como criação orientada de planos de ensino, salvamento automático, edição estruturada de conteúdos, exportação em múltiplos formatos e navegação intuitiva, consolidando-se como uma solução eficaz para o apoio à gestão acadêmica.          `,
+        fotos: {
+          descricao: "",
+          fotos: [  
+            "/fotos-features/planodeestudo.png"
+          ]
+        },      
+        conclusao: `
+Os resultados obtidos foram, agilidade e melhor direcionamento, no cronograma de estudos. Através deste projeto, obtivemos uma melhor percepção das divisões de um ciclo, na etapa de desenvolvimento, aplicação e teste. E possíveis melhorias, temos o desejo de ampliar a gama de matérias e metodologias de estudos, através de uma coleta de dados das respectivas áreas e melhorar a estrutura do site através da "área de feedbacks" que vamos implementar em breve.
+          `
+      },
+      id: 9
+  },
+  
 ];
 
 export default FEATURES;
