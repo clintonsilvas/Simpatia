@@ -408,6 +408,43 @@ Os resultados obtidos foram, agilidade e melhor direcionamento, no cronograma de
       },
       id: 9
   },
+  {           
+      titulo: "Simpatico", 
+      data: "NOVEMBRO DE 2025",
+      descricao: "Utilização para tirar duvidas",
+      equipe: [
+        "João Gabriel", "Lucas Silva Santos", "Talysson Moura", "João Pedro", "Gabriel Pacheco"                  
+      ],    
+      topicos: {
+        links: {
+          descricao:"",
+          links:   [
+            "https://github.com/joaogabriel343/simpatico-atex.git"          
+          ]      
+        },
+        introducao: `
+          Atualização da Interface
+        `,
+         escolhas: `
+         Atualização da Interface e React
+
+        `,
+          processo: `        
+          Atualização da Interface
+          `,
+          fotos: {
+          descricao: "",
+          fotos: [  
+            "/fotos-features/simpatico.png",
+            "/fotos-features/simpatico2.png"            
+          ]
+        },      
+        conclusao: `
+        Atualização da Interface
+        `
+      },
+      id: 9
+  },
   
 ];
 
